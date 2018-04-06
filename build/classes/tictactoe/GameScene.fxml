@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="373.0" prefWidth="537.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tictactoe.GameSceneController">
+   <children>
+      <VBox layoutX="14.0" prefHeight="371.0" prefWidth="100.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="30.0" prefWidth="100.0" text="Players" textAlignment="CENTER">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Label>
+            <Separator prefHeight="27.0" prefWidth="100.0" />
+            <TextField id="mPlayerOne" fx:id="mPlayerOne" prefHeight="73.0" prefWidth="100.0" />
+            <Separator prefHeight="31.0" prefWidth="100.0" />
+            <TextField id="mPlayerTwo" fx:id="mPlayerTwo" prefHeight="74.0" prefWidth="100.0" />
+            <Button id="mStartButton" fx:id="mStartButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#didClickStart" text="Start">
+               <VBox.margin>
+                  <Insets left="20.0" top="20.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+      <Separator layoutX="116.0" layoutY="-1.0" orientation="VERTICAL" prefHeight="371.0" prefWidth="15.0" />
+      <Button fx:id="button1" layoutX="124.0" layoutY="1.0" mnemonicParsing="false" onAction="#didClickGrid" prefHeight="124.0" prefWidth="139.0" />
+      <Button fx:id="button4" layoutX="124.0" layoutY="125.0" mnemonicParsing="false" onAction="#didClickGrid" prefHeight="124.0" prefWidth="139.0" />
+      <Button fx:id="button7" layoutX="124.0" layoutY="249.0" mnemonicParsing="false" onAction="#didClickGrid" prefHeight="124.0" prefWidth="139.0" />
+      <Button fx:id="button2" layoutX="263.0" layoutY="1.0" mnemonicParsing="false" onAction="#didClickGrid" prefHeight="124.0" prefWidth="139.0" />
+      <Button fx:id="button5" layoutX="263.0" layoutY="125.0" mnemonicParsing="false" onAction="#didClickGrid" prefHeight="124.0" prefWidth="139.0" />
+      <Button fx:id="button8" layoutX="263.0" layoutY="249.0" mnemonicParsing="false" onAction="#didClickGrid" prefHeight="124.0" prefWidth="139.0" />
+      <Button fx:id="button3" layoutX="402.0" layoutY="1.0" mnemonicParsing="false" onAction="#didClickGrid" prefHeight="124.0" prefWidth="139.0" />
+      <Button fx:id="button6" layoutX="402.0" layoutY="125.0" mnemonicParsing="false" onAction="#didClickGrid" prefHeight="124.0" prefWidth="139.0" />
+      <Button fx:id="button9" layoutX="402.0" layoutY="249.0" mnemonicParsing="false" onAction="#didClickGrid" prefHeight="124.0" prefWidth="139.0" />
+   </children>
+</AnchorPane>

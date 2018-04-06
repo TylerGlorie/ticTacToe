@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tictactoe.FXMLDocumentController">
+    <children>
+        <Button fx:id="button" alignment="BOTTOM_RIGHT" layoutX="245.0" layoutY="159.0" onAction="#didClickCloseButton" text="Cancel" />
+      <Button layoutX="179.0" layoutY="159.0" mnemonicParsing="false" onAction="#didClickStartButton" text="Start" />
+      <TextField id="mP1Name" fx:id="mPlayerOneBox" layoutX="106.0" layoutY="29.0" prefHeight="27.0" prefWidth="193.0" promptText="Player 1" />
+      <TextField id="mP2Name" fx:id="mPlayerTwoBox" layoutX="106.0" layoutY="73.0" prefHeight="27.0" prefWidth="193.0" promptText="Player 2" />
+      <Label layoutX="7.0" layoutY="34.0" text="Player 1 Name" />
+      <Label layoutX="6.0" layoutY="78.0" text="Player 2 Name" />
+    </children>
+</AnchorPane>
