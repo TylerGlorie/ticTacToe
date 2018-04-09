@@ -112,8 +112,8 @@ public class GameSceneController implements Initializable {
     }
     private int getScore(){
         //bottom row
-        if((button9.getText().equals(button7.getText()))&(button9.getText().equals(button8.getText())) ){
-            if(button9.getText().equals("") || button7.getText().equals("") || button8.getText().equals("")){
+        if((button9.getText().equals(button7.getText()))&&(button9.getText().equals(button8.getText())) ){
+            if(button9.getText().equals("") ){
                 return 0;
             }
             else if(button9.getText().equals("X")){
@@ -123,8 +123,8 @@ public class GameSceneController implements Initializable {
             }
         }
         //middle row
-        if((button6.getText().equals(button5.getText()))&(button6.getText().equals(button4.getText()))){
-            if(button6.getText().equals("") || button5.getText().equals("") || button4.getText().equals("")){
+        if((button6.getText().equals(button5.getText()))&&(button6.getText().equals(button4.getText()))){
+            if(button6.getText().equals("") ){
                 return 0;
             }
             else if(button6.getText().equals("X")){
@@ -134,8 +134,8 @@ public class GameSceneController implements Initializable {
             }
         }
         //top row
-        if((button3.getText().equals(button2.getText()))&(button3.getText().equals(button1.getText()))){
-            if(button3.getText().equals("") || button2.getText().equals("") || button1.getText().equals("")){
+        if((button3.getText().equals(button2.getText()))&&(button3.getText().equals(button1.getText()))){
+            if(button3.getText().equals("")){
                 return 0;
             }
             else if(button3.getText().equals("X")){
@@ -145,8 +145,8 @@ public class GameSceneController implements Initializable {
             }
         }
         //right col
-        if((button3.getText().equals(button6.getText()))&(button3.getText().equals(button9.getText()))){
-            if(button3.getText().equals("") || button6.getText().equals("") || button9.getText().equals("")){
+        if((button3.getText().equals(button6.getText()))&&(button3.getText().equals(button9.getText()))){
+            if(button3.getText().equals("") ){
                 return 0;
             }
             else if(button3.getText().equals("X")){
@@ -156,8 +156,8 @@ public class GameSceneController implements Initializable {
             }
         }
         //mid col`
-        if((button2.getText().equals(button5.getText()))&(button2.getText().equals(button8.getText()))){
-            if(button2.getText().equals("") || button5.getText().equals("") || button8.getText().equals("")){
+        if((button2.getText().equals(button5.getText()))&&(button2.getText().equals(button8.getText()))){
+            if(button2.getText().equals("")){
                 return 0;
             }
             else if(button2.getText().equals("X")){
@@ -167,8 +167,8 @@ public class GameSceneController implements Initializable {
             }
         }
         //left col
-        if((button1.getText().equals(button4.getText()))&(button1.getText().equals(button7.getText()))){
-            if(button1.getText().equals("") || button4.getText().equals("") || button7.getText().equals("")){
+        if((button1.getText().equals(button4.getText()))&&(button1.getText().equals(button7.getText()))){
+            if(button1.getText().equals("")){
                 return 0;
             }
             else if(button1.getText().equals("X")){
@@ -178,8 +178,8 @@ public class GameSceneController implements Initializable {
             }
         }
         //tl to br diagonal
-        if((button1.getText().equals(button5.getText()))&(button1.getText().equals(button9.getText()))){
-            if(button1.getText().equals("") || button5.getText().equals("") || button9.getText().equals("")){
+        if((button1.getText().equals(button5.getText()))&&(button1.getText().equals(button9.getText()))){
+            if(button1.getText().equals("") ){
                 return 0;
             }else if(button1.getText().equals("X")){
                 return 1;
@@ -188,8 +188,8 @@ public class GameSceneController implements Initializable {
             }
         }
         //tr to bl diagonal
-        if((button3.getText().equals(button5.getText()))&(button3.getText().equals(button7.getText()))){
-            if(button3.getText().equals("") || button5.getText().equals("") || button7.getText().equals("")){
+        if((button3.getText().equals(button5.getText()))&&(button3.getText().equals(button7.getText()))){
+            if(button3.getText().equals("")){
                 return 0;
             }else if(button3.getText().equals("X")){
                 return 1;
